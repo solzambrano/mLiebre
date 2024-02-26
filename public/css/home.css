@@ -30,7 +30,7 @@ p{
 }
 
 #logo{
-    width: 50vw;
+    width: 40%;
 }
 
 #banner{
@@ -126,7 +126,7 @@ ul{
   list-style-type: none;
   padding: 0px;
 }
-li{
+footer li{
     padding: 20px;
 }
 /* li p{
