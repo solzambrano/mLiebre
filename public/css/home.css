@@ -1,0 +1,128 @@
+* { 
+    box-sizing: border-box;
+    margin:0px
+}
+
+/*seccion header*/
+
+header{
+    background-color: #EAC926;  
+}
+header p{
+    text-align: center;
+}
+p{
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+#burger-menu{
+    background-color: #1259c3;
+    display: block;
+    margin:auto;
+    border:none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#encabezado{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+#logo{
+    width: 50vw;
+}
+
+#banner{
+    width: 100%;
+}
+.fa-bars{
+    color: white;
+    font-size:2em
+}
+.titulares{
+    font-size: 24px;
+    color:#666;
+    text-align: center;
+}
+.prices{
+    font-size: 18px;
+}
+.descuentos, .descripciones{
+    font-size: 16px;
+}
+/*common*/
+
+.orientation{
+    flex-direction: column;
+}
+.centered{
+    justify-content: center;
+}
+.aligned{
+    display: flex;
+    align-items: center;
+}
+.spaced{
+    margin: 10px 0px;
+}
+/*main*/
+main{
+    background-color: #ebebeb;
+}
+.detail-products{
+    border-top: 1px #ebebeb solid;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/*para el divque contiene las imagenes padding-left: 5vw;*/
+/*card de productos*/
+section{
+    width: 90%;
+}
+
+.color-green{
+color:#39b54a;
+}
+article{
+    background-color: white;
+}
+/*camion*/
+span i{
+    
+    padding: 8px;
+    border: 1px #39b54a solid;
+    border-radius: 100%;
+}
+/*imagenes de productos*/
+img{
+    width: 260px;
+}
+
+/*footer*/
+.icon-footer{
+    font-size: 2em;
+    color: #1263BC;
+    margin-bottom: 10px;
+}
+.descripciones{
+    color:#666
+}
+ul{
+  list-style-type: none;
+}
+/* li p{
+    margin: auto;
+} */
+/*colores::afterAmarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb main;
+Verde: #39b54a; camion*/
