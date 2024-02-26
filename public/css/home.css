@@ -102,10 +102,14 @@ span i{
 }
 /*imagenes de productos*/
 img{
-    width: 260px;
+    width: 100%;
 }
 
 /*footer*/
+footer{
+    padding: 50px 20px 5px;
+    color:#666
+}
 .icon-footer{
     font-size: 2em;
     color: #1263BC;
@@ -113,9 +117,17 @@ img{
 }
 .descripciones{
     color:#666
+} 
+
+.footer-title{
+    text-align: center;
 }
 ul{
   list-style-type: none;
+  padding: 0px;
+}
+li{
+    padding: 20px;
 }
 /* li p{
     margin: auto;
