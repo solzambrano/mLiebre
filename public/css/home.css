@@ -32,9 +32,16 @@ p{
 #logo{
     width: 40%;
 }
+nav{
+    display: none;
+}
 
 #banner{
     width: 100%;
+    margin-top: 25px;
+}
+#subtitle{
+    margin-bottom: 25px;
 }
 .fa-bars{
     color: white;
@@ -73,12 +80,10 @@ main{
 .detail-products{
     border-top: 1px #ebebeb solid;
     padding: 15px;
-    margin-bottom: 10px;
 }
 .image-container{
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
 /*para el divque contiene las imagenes padding-left: 5vw;*/
@@ -92,6 +97,7 @@ color:#39b54a;
 }
 article{
     background-color: white;
+    margin-bottom: 10px;
 }
 /*camion*/
 span i{
@@ -116,7 +122,9 @@ footer{
     margin-bottom: 10px;
 }
 .descripciones{
-    color:#666
+    color:#666;
+    padding-top: 10px;
+    display: none;
 } 
 
 .footer-title{
@@ -129,9 +137,31 @@ ul{
 footer li{
     padding: 20px;
 }
-/* li p{
-    margin: auto;
-} */
+/*breakpoints*/
+/*tablets*/
+@media (min-width: 361px) {
+     .descripciones,nav{
+        display: block;
+    } 
+    #burger-menu{
+        display: none;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+/*desktop*/
+@media (min-width: 769px) {
+    .descripciones,nav{
+        display: block;
+    } 
+    #burger-menu{
+        display: none;
+    }
+  article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
 /*colores::afterAmarillo: #EAC926;
 Azul: #03264C;
 Celeste: #1259c3;
