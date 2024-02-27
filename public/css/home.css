@@ -56,7 +56,7 @@ nav{
 .prices{
     font-size: 18px;
 }
-.descuentos, .descripciones{
+.sales, .descripciones{
     font-size: 16px;
 }
 /*common*/
@@ -101,11 +101,14 @@ article{
     margin-bottom: 10px;
 }
 /*camion*/
-span i{
-    
+.fa-truck{
+    position: relative;
+    float: right;
     padding: 8px;
     border: 1px #39b54a solid;
     border-radius: 100%;
+    top:-32px
+    
 }
 /*imagenes de productos*/
 img{
