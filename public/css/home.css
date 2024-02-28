@@ -26,23 +26,36 @@ p{
 }
 #encabezado{
     display: flex;
-    justify-content: space-around;
     padding: 15px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+#buscador{
+    display: flex;
+    align-items: center;
+    flex:0 0 50%;
+    justify-content: center;
 
+}
+#buscador, #logo{
+    margin:5px 0px;
+}
 #logo{
     width: 40%;
+    flex:0 0 50%
 }
 nav{
     display: none;
 }
-
+.aligned li{
+    padding: 0px 15px;
+}
 #banner{
     width: 100%;
     margin-top: 25px;
 }
 #subtitle{
-    margin-bottom: 25px;
+    margin: 25px;
 }
 .fa-bars{
     color: white;
@@ -55,12 +68,18 @@ nav{
 }
 .prices{
     font-size: 18px;
+    flex:0 0 30%
 }
-.sales, .descripciones{
+.description{
+    flex:0 0 70%
+}
+.sales, .description{
     font-size: 16px;
 }
 /*common*/
-
+.between{
+    justify-content: space-between;
+}
 .orientation{
     flex-direction: column;
 }
@@ -125,7 +144,7 @@ footer{
     color: #1263BC;
     margin-bottom: 10px;
 }
-.descripciones{
+.description{
     color:#666;
     padding-top: 10px;
     display: none;
@@ -142,28 +161,56 @@ footer li{
     padding: 20px;
 }
 /*breakpoints*/
-/*tablets*/
-@media (min-width: 361px) {
-     .descripciones,nav{
-        display: block;
+/*tablets (se toma en cuenta los breakpoints segun profe juan*/
+@media (min-width: 768px) {
+     .description,nav{
+        display: flex;
     } 
     #burger-menu{
         display: none;
     }
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+        margin:10px 15px
+    }
+    .section-products{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #buscador{
+    flex:initial;
+
+    }
+    #logo{
+        width: 40%;
+        flex:initial
     }
 }
 /*desktop*/
-@media (min-width: 769px) {
-    .descripciones,nav{
-        display: block;
+@media (min-width: 1024px) {
+    .description,nav{
+        display: flex;
     } 
     #burger-menu{
         display: none;
     }
   article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+      .section-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+     #buscador{
+    flex:initial
+
+    }
+    #logo{
+        width: 40%;
+        flex:initial
     }
 }
 /*colores::afterAmarillo: #EAC926;
