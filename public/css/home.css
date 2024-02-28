@@ -149,8 +149,8 @@ footer li{
     padding: 20px;
 }
 /*breakpoints*/
-/*tablets*/
-@media (min-width: 361px) {
+/*tablets (se toma en cuenta los breakpoints segun profe juan*/
+@media (min-width: 768px) {
      .description,nav{
         display: block;
     } 
@@ -159,10 +159,16 @@ footer li{
     }
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+        margin:10px 15px
+    }
+    .section-products{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 /*desktop*/
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
     .description,nav{
         display: block;
     } 
@@ -171,6 +177,12 @@ footer li{
     }
   article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+      .section-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 /*colores::afterAmarillo: #EAC926;
