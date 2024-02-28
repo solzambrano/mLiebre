@@ -26,26 +26,36 @@ p{
 }
 #encabezado{
     display: flex;
-    justify-content: space-around;
     padding: 15px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #buscador{
     display: flex;
     align-items: center;
+    flex:0 0 50%;
+    justify-content: center;
+
+}
+#buscador, #logo{
+    margin:5px 0px;
 }
 #logo{
     width: 40%;
+    flex:0 0 50%
 }
 nav{
     display: none;
 }
-
+.aligned li{
+    padding: 0px 15px;
+}
 #banner{
     width: 100%;
     margin-top: 25px;
 }
 #subtitle{
-    margin-bottom: 25px;
+    margin: 25px;
 }
 .fa-bars{
     color: white;
@@ -67,7 +77,9 @@ nav{
     font-size: 16px;
 }
 /*common*/
-
+.between{
+    justify-content: space-between;
+}
 .orientation{
     flex-direction: column;
 }
@@ -152,7 +164,7 @@ footer li{
 /*tablets (se toma en cuenta los breakpoints segun profe juan*/
 @media (min-width: 768px) {
      .description,nav{
-        display: block;
+        display: flex;
     } 
     #burger-menu{
         display: none;
@@ -166,11 +178,19 @@ footer li{
         display: flex;
         flex-wrap: wrap;
     }
+    #buscador{
+    flex:initial;
+
+    }
+    #logo{
+        width: 40%;
+        flex:initial
+    }
 }
 /*desktop*/
 @media (min-width: 1024px) {
     .description,nav{
-        display: block;
+        display: flex;
     } 
     #burger-menu{
         display: none;
@@ -183,6 +203,14 @@ footer li{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+     #buscador{
+    flex:initial
+
+    }
+    #logo{
+        width: 40%;
+        flex:initial
     }
 }
 /*colores::afterAmarillo: #EAC926;
