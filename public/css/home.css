@@ -29,7 +29,10 @@ p{
     justify-content: space-around;
     padding: 15px 0px;
 }
-
+#buscador{
+    display: flex;
+    align-items: center;
+}
 #logo{
     width: 40%;
 }
@@ -55,8 +58,12 @@ nav{
 }
 .prices{
     font-size: 18px;
+    flex:0 0 30%
 }
-.sales, .descripciones{
+.description{
+    flex:0 0 70%
+}
+.sales, .description{
     font-size: 16px;
 }
 /*common*/
@@ -125,7 +132,7 @@ footer{
     color: #1263BC;
     margin-bottom: 10px;
 }
-.descripciones{
+.description{
     color:#666;
     padding-top: 10px;
     display: none;
@@ -144,7 +151,7 @@ footer li{
 /*breakpoints*/
 /*tablets*/
 @media (min-width: 361px) {
-     .descripciones,nav{
+     .description,nav{
         display: block;
     } 
     #burger-menu{
@@ -156,7 +163,7 @@ footer li{
 }
 /*desktop*/
 @media (min-width: 769px) {
-    .descripciones,nav{
+    .description,nav{
         display: block;
     } 
     #burger-menu{
