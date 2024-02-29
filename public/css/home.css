@@ -12,10 +12,7 @@ header{
 header p{
     text-align: center;
 }
-p{
-    font-family: 'Roboto';
-    font-size: 12px;
-}
+
 #burger-menu{
     background-color: #1259c3;
     display: block;
@@ -92,6 +89,10 @@ nav{
 }
 .spaced{
     margin: 10px 0px;
+}
+p{
+    font-family: 'Roboto';
+    font-size: 12px;
 }
 /*main*/
 main{
