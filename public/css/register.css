@@ -1,7 +1,10 @@
 /*form*/
 form{
-    display: flex;
-    flex-wrap: wrap;
+   display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 20%;
+
 }
 label{
     padding: 20px;
@@ -11,9 +14,49 @@ input{
     border-radius: 10px;
     border: none;
     margin-left: 5px;
+    justify-content: center;
+}
+fieldset{
+    border: none;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+fieldset label{
+    padding: 0px;
+    margin: 10px 0px;
+}
+#category{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
 }
 /*common*/
 span{
     font-family: 'Roboto';
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 80px;
+  display: inline-block;
+
+}
+@media (max-width: 370px) {
+    #category{
+  display: block;
+  margin-left: 40px;
+}
+fieldset{
+    display: block;
+}
+}
+@media (min-width: 600px) {
+    form{
+        display: flex;
+  flex-direction: column;
+
+    }
+    fieldset{
+        display: block;
+    }
 }
