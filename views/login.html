@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/home.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link href="/css/home.css" rel="stylesheet"/>
     <link href="/css/register.css" rel="stylesheet"/>
     <title>Mercado Liebre</title>
 </head>
 <body>
-     <header>
+    <header>
         <div id="encabezado">
             <img id="logo" src="/images/logo-mercado-liebre.svg" alt="">
             <div id="buscador">
@@ -45,55 +45,21 @@
                 <i class="fas fa-bars"></i>
             </button>
         <img id="banner"src="/images/img-home-banner.jpg">
-    </header>
+    </header> 
     <main>
-        <form action="register" method="POST">
-            <label for="nameLastName"><span>Nombre y Apellido</span>
-                <input name="nameLastName" id="nameLastName">
+        <form>
+             <label for="nameLastName"><span>Nombre y Apellido</span>
+                <input type="text" name="LastName" pattern="[A-Za-z]+" required="" minlength="10"maxlength="20" id="nameLastName">
             </label>
             <label for="userName"><span>Nombre de Usuario</span>
                 <input name="userName" id="userName">
-            </label>
-            <label for="email"><span>Email</span>
-                <input name="email" id="email" type="email">
-            </label>
-            <label for="date"><span>Fecha de Nacimiento</span>
-                <input name="date" id="date" type="date">
-            </label >
-            <fieldset for="category"><span>Categorias</span>
-            <div id="category">
-                <label for="opcion1"><span>Electro</span>
-                    <input type="checkbox" id="opcion1" name="opcion1" value="opcion1">
-                </label>
-                <label for="opcion2"><span>Moda</span>
-                    <input type="checkbox" id="opcion2" name="opcion2" value="opcion2">
-                </label>
-                <label for="opcion3"><span>Hogar</span>
-                    <input type="checkbox" id="opcion3" name="opcion3" value="opcion3">
-                </label>
-                <label for="opcion3"><span>Vida Sana</span>
-                    <input type="checkbox" id="opcion3" name="opcion3" value="opcion3">
-                </label>
-                <label for="opcion3"><span>Jugueteria</span>
-                    <input type="checkbox" id="opcion3" name="opcion3" value="opcion3">
-                </label>
-                </div>
-            </fieldset>
-            <label for="picture"><span>Foto de Usuario</span>
-                <input name="picture" id="picture" type="file">
-            </label>
-            <label for="password"><span>Contraseña</span>
-                <input name="password" id="password" type="password">
-            </label>
-            <label for="passwordConfirm"><span>Confirmar Contraseña</span>
-                <input name="passwordConfirm" id="passwordConfirm">
             </label>
         </form>
          <div class="buttons">
                 <button name="send" id="send">Enviar</button>
         </div>
-    </main>
-      <footer>
+    </main> 
+     <footer>
         <ul>
             <li class="aligned orientation">
                 <i class="icon-footer fa-solid fa-credit-card"></i>
