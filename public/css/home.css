@@ -63,6 +63,10 @@ nav{
     color:#666;
     text-align: center;
 }
+.options-user{
+    text-decoration: none;
+  color: black;
+}
 .prices{
     font-size: 18px;
     flex:0 0 30%
@@ -180,11 +184,14 @@ footer li{
         flex-wrap: wrap;
     }
     #buscador{
-    flex:initial;
+        flex:initial;
 
     }
+    #encabezado{
+        justify-content: space-between;
+    }
     #logo{
-        width: 40%;
+        width: 35%;
         flex:initial
     }
 }

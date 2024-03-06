@@ -1,31 +1,52 @@
 /*form*/
 form{
    display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex-direction: column;
   padding-left: 20%;
 
 }
 label{
     padding: 20px;
+    display: flex;
+  flex-direction: column;
 }
 input{
     padding: 0px 15px;
     border-radius: 10px;
     border: none;
-    margin-left: 5px;
-    justify-content: center;
+    width: 80%;
 }
 fieldset{
     border: none;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
     width: 75%;
 }
 fieldset label{
     padding: 0px;
     margin: 10px 0px;
+    display: block;
+   
+}
+.buttons{
+display: flex;
+justify-content: center;
+}
+button{
+  background-color: #1263BC;
+  max-width: 20%;
+  width: 18rem;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+#category label{
+ flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+#category input {
+    width:auto;
 }
 #category{
   display: flex;
@@ -37,7 +58,7 @@ span{
     font-family: 'Roboto';
     font-size: 15px;
     font-weight: bold;
-    width: 80px;
+
   display: inline-block;
 
 }
@@ -51,12 +72,20 @@ fieldset{
 }
 }
 @media (min-width: 600px) {
-    form{
+    /* form{
         display: flex;
   flex-direction: column;
 
-    }
+    } */
     fieldset{
-        display: block;
+            /* display: flex;
+    justify-content: space-between; */
+    display: block;
     }
+}
+@media (min-width: 1024px) {
+  form{
+    width: 80%;
+    margin: auto
+  }
 }
