@@ -25,21 +25,23 @@ header p{
     display: flex;
     padding: 15px 0px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 #buscador{
     display: flex;
     align-items: center;
-    flex:0 0 50%;
-    justify-content: center;
+    width: 50%;
 
 }
 #buscador, #logo{
     margin:5px 0px;
 }
+#buscador input{
+    width: 70%;
+}
 #logo{
-    width: 40%;
-    flex:0 0 50%
+    width:40vw;
+    flex:0 0 50%;
 }
 nav{
     display: none;
@@ -52,7 +54,12 @@ nav{
     margin-top: 25px;
 }
 #subtitle{
-    margin: 25px;
+    padding: 15px;
+    margin: auto;
+    /*revisar si el display hace algo y revisar el centrado de este elemento*/
+}
+#subtitle p{
+    font-size: 16px;
 }
 .fa-bars{
     color: white;
@@ -135,7 +142,7 @@ article{
     
 }
 /*imagenes de productos*/
-img{
+.image-container img{
     width: 100%;
 }
 
@@ -183,16 +190,17 @@ footer li{
         display: flex;
         flex-wrap: wrap;
     }
-    #buscador{
-        flex:initial;
-
-    }
-    #encabezado{
-        justify-content: space-between;
-    }
     #logo{
-        width: 35%;
-        flex:initial
+        width: 21vw;
+    }
+    #buscador #logo{
+        flex:initial;
+    }
+        #buscador {
+        width: 35%;;
+    }
+    #subtitle{
+        margin: 0px;
     }
 }
 /*desktop*/
@@ -212,13 +220,9 @@ footer li{
         flex-wrap: wrap;
         justify-content: center;
     }
-     #buscador{
+     #buscador #logo{
     flex:initial
 
-    }
-    #logo{
-        width: 40%;
-        flex:initial
     }
 }
 /*colores::afterAmarillo: #EAC926;

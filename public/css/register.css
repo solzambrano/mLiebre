@@ -32,6 +32,9 @@ fieldset label{
 display: flex;
 justify-content: center;
 }
+.buttons a{
+text-align: center;
+}
 button{
   background-color: #1263BC;
   max-width: 20%;
