@@ -235,8 +235,13 @@ footer li{
         justify-content: center;
     }
      #buscador #logo{
-    flex:initial
-
+        flex:initial
+    }
+    footer ul{
+        display: flex;
+    }
+    .icon-footer:hover{
+        color: #0022AA;
     }
 }
 /*colores::afterAmarillo: #EAC926;
