@@ -56,6 +56,11 @@ button{
   flex-direction: column;
   margin-left: 100px;
 }
+
+/*efecto para boton envio*/
+button:hover{
+  background-color: #0022AA;
+}
 /*common*/
 span{
     font-family: 'Roboto';
