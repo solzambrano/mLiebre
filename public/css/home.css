@@ -84,6 +84,20 @@ nav{
 .sales, .description{
     font-size: 16px;
 }
+/*ANIMACIONES*/
+.fa-truck{
+    transition: transform 1.5s ease
+}
+.fa-truck:hover{
+    transform: rotateZ(360deg)
+}
+article:hover{
+    box-shadow: 0px 0px 30px rgb(226, 184, 59);;
+}
+
+.image-container:hover + .detail-products .description {
+    display: block; /* Muestra el elemento cuando el mouse pasa por encima de la imagen */
+}
 /*common*/
 .between{
     justify-content: space-between;
