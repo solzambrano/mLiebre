@@ -1,0 +1,25 @@
+* { 
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+.between{
+    justify-content: space-between;
+}
+.orientation{
+    flex-direction: column;
+}
+.centered{
+    justify-content: center;
+}
+.aligned{
+    display: flex;
+    align-items: center;
+}
+.spaced{
+    margin: 10px 0px;
+}
+p{
+    font-family: 'Roboto';
+    font-size: 12px;
+}

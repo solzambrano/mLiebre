@@ -1,10 +1,3 @@
-* { 
-    box-sizing: border-box;
-    margin:0px;
-    padding: 0px;
-}
-
-/*seccion header*/
 
 
 /*ANIMACIONES*/
@@ -22,26 +15,7 @@ article:hover{
     display: block; /* Muestra el elemento cuando el mouse pasa por encima de la imagen */
 }
 /*common*/
-.between{
-    justify-content: space-between;
-}
-.orientation{
-    flex-direction: column;
-}
-.centered{
-    justify-content: center;
-}
-.aligned{
-    display: flex;
-    align-items: center;
-}
-.spaced{
-    margin: 10px 0px;
-}
-p{
-    font-family: 'Roboto';
-    font-size: 12px;
-}
+
 /*main*/
 main{
     background-color: #ebebeb;
@@ -55,7 +29,6 @@ main{
     justify-content: center;
 }
 
-/*para el divque contiene las imagenes padding-left: 5vw;*/
 /*card de productos*/
 section{
     width: 90%;
@@ -83,7 +56,6 @@ article{
     width: 100%;
 }
 
-/*footer*/
 
 /*breakpoints*/
 /*tablets (se toma en cuenta los breakpoints segun profe juan*/
