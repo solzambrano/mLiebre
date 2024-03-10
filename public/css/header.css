@@ -1,0 +1,78 @@
+header{
+    background-color: #EAC926;  
+}
+header p{
+    text-align: center;
+}
+
+#burger-menu{
+    background-color: #1259c3;
+    display: block;
+    margin:auto;
+    border:none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#encabezado{
+    display: flex;
+    padding: 15px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#buscador{
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+#buscador, #logo{
+    margin:5px 0px;
+}
+#buscador input{
+    width: 70%;
+}
+#logo{
+    width:40vw;
+    flex:0 0 50%;
+}
+nav{
+    display: none;
+}
+.aligned li{
+    padding: 0px 15px;
+}
+#banner{
+    width: 100%;
+    margin-top: 25px;
+}
+#subtitle{
+    padding: 15px;
+    margin: auto;
+    /*revisar si el display hace algo y revisar el centrado de este elemento*/
+}
+#subtitle p{
+    font-size: 16px;
+}
+.fa-bars{
+    color: white;
+    font-size:2em
+}
+.titulares{
+    font-size: 24px;
+    color:#666;
+    text-align: center;
+}
+.options-user{
+    text-decoration: none;
+    color: black;
+}
+.prices{
+    font-size: 18px;
+    flex:0 0 30%
+}
+.description{
+    flex:0 0 70%
+}
+.sales, .description{
+    font-size: 16px;
+}
