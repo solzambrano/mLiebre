@@ -1,0 +1,25 @@
+footer{
+    padding: 50px 20px 5px;
+    color:#666
+}
+.icon-footer{
+    font-size: 2em;
+    color: #1263BC;
+    margin-bottom: 10px;
+}
+.description{
+    color:#666;
+    padding-top: 10px;
+    display: none;
+} 
+
+.footer-title{
+    text-align: center;
+}
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+footer li{
+    padding: 20px;
+}
