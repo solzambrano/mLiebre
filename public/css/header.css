@@ -76,3 +76,57 @@ nav{
 .sales, .description{
     font-size: 16px;
 }
+
+/*mediaquery*/
+@media (min-width: 768px) {
+     .description,nav{
+        display: flex;
+    } 
+    #burger-menu{
+        display: none;
+    }
+        #logo{
+        width: 21vw;
+    }
+    #buscador #logo{
+        flex:initial;
+    }
+        #buscador {
+        width: 35%;;
+    }
+    #subtitle{
+        margin: 0px;
+    }
+    /*box de productos*/
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+        margin:10px 15px
+    }
+    .section-products{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+/*desktop*/
+@media (min-width: 1024px) {
+    .description,nav{
+        display: flex;
+    } 
+    #burger-menu{
+        display: none;
+    }
+  article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+      .section-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+     #buscador #logo{
+        flex:initial
+    }
+}
