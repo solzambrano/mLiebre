@@ -29,11 +29,11 @@ fieldset label{
    
 }
 .buttons{
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .buttons a{
-text-align: center;
+  text-align: center;
 }
 button{
   background-color: #1263BC;
@@ -44,7 +44,7 @@ button{
   margin: 20px;
 }
 #category label{
- flex-direction: row;
+  flex-direction: row;
   justify-content: space-between;
   display: flex;
 }
@@ -66,28 +66,20 @@ span{
     font-family: 'Roboto';
     font-size: 15px;
     font-weight: bold;
-
-  display: inline-block;
+    display: inline-block;
 
 }
 @media (max-width: 370px) {
     #category{
-  display: block;
-  margin-left: 40px;
-}
+      display: block;
+      margin-left: 40px;
+  }
 fieldset{
     display: block;
-}
+  }
 }
 @media (min-width: 600px) {
-    /* form{
-        display: flex;
-  flex-direction: column;
-
-    } */
     fieldset{
-            /* display: flex;
-    justify-content: space-between; */
     display: block;
     }
 }
