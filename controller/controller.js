@@ -1,6 +1,12 @@
 const controller={
     index:function(req,res){
-        res.send('hola')
+        res.render('home')
+    },
+    register:function(req,res){
+       return res.render('register')
+    },
+    login:function(req,res){
+        res.render('login')
     }
 }
 
